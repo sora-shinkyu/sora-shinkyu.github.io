@@ -1,0 +1,22 @@
+.footline{
+    display: flex;
+    align-items: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    width: 80%;
+    overflow: hidden;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) { 
+    .footline{
+        font-size: 8px;
+    }
+}

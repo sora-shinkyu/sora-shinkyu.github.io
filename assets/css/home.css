@@ -1,0 +1,159 @@
+.top-contents {
+  display: flex;
+  background-color: skyblue;
+  background-blend-mode: darken;
+  background-image: url(../images/sea.PNG);
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  /* overflow: hidden; */
+  justify-content: center;
+  text-align: center;
+  height: 100dvh;
+}
+
+.article {
+  border-bottom: 2px solid #e3e3e3;
+  margin: 12px;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  height: 128px;
+  overflow: hidden;
+}
+
+.article-title {
+  font-size: 20px;
+  color: gray;
+}
+
+.article-img {
+  width: 100px;
+}
+
+.center-message {
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out 0.3s 1 both;
+}
+@keyframes fadeIn {
+  /*animetion-nameで設定した値を書く*/
+
+  0% {
+    opacity: 0;
+  } /*アニメーション開始時は不透明度0%*/
+
+  100% {
+    opacity: 1;
+  } /*アニメーション終了時は不透明度100%*/
+}
+.center-message h2 {
+  font-size: 40px;
+}
+
+.center-message p {
+  line-height: 0.5em;
+}
+
+.center-message a {
+  line-height: 0.5em;
+  color: inherit;
+  text-decoration: underline;
+}
+
+.main-contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section img {
+  padding: 10px;
+  width: 30%;
+  z-index: 1;
+}
+
+.right-desc {
+  margin-left: -8%;
+}
+
+.left-desc {
+  margin-right: -8%;
+}
+
+.greeting {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 15px;
+
+  background-color: white;
+}
+
+.greeting-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.greeting-content img {
+  width: 150px;
+  margin-right: 2px;
+  height: auto;
+}
+
+.bottom-contents {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  border: solid 1px black;
+}
+
+h5 {
+  border-bottom: 1px gray dashed;
+}
+
+@media (max-width: 767px) {
+  .center-message {
+    font-size: 12px;
+  }
+
+  .center-message h2 {
+    font-size: 30px;
+  }
+
+  .section img {
+    width: 70%;
+  }
+
+  .right-desc {
+    margin-left: -20%;
+  }
+  .left-desc {
+    margin-right: -20%;
+  }
+
+  .pc-menu {
+    display: none;
+  }
+  .openbtn1 {
+    display: initial;
+  }
+}
