@@ -68,6 +68,12 @@
   text-decoration: underline;
 }
 
+.center-menu {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
 .main-contents {
   display: flex;
   align-items: center;
