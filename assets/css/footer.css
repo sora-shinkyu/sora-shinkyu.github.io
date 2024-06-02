@@ -1,9 +1,9 @@
-.footline{
+.footline {
     display: flex;
     align-items: center;
 }
 
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,8 +15,8 @@
     margin-bottom: 20px;
 }
 
-@media (max-width: 767px) { 
-    .footline{
+@media (max-width: 767px) {
+    .footline {
         font-size: 8px;
     }
 }
