@@ -1,16 +1,56 @@
-.top-contents {
-  display: flex;
+body {
+  margin: 0px;
+}
+
+.main {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.scroll_snap_area {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+#outline {
   background-color: skyblue;
   background-blend-mode: darken;
   background-image: url(../images/sea.PNG);
+}
+
+
+#aboutus {
+  background-image: url(../images/therapy.jpg);
+}
+
+#feemenu {
+  background-image: url(../images/feemenu.jpg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact {
+  background-image: url(../images/contact.jpg);
+}
+
+.top-contents {
+  display: flex;
   width: 100%;
+  height: 100vh;
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
   /* overflow: hidden; */
   justify-content: center;
   text-align: center;
-  height: 100dvh;
 }
 
 .center-message {
@@ -27,6 +67,10 @@
   font-size: 40px;
 }
 
+.center-message h3 {
+  font-size: 23px;
+}
+
 .center-message p {
   line-height: 0.5em;
 }
@@ -35,6 +79,29 @@
   line-height: 0.5em;
   color: inherit;
   text-decoration: underline;
+}
+
+.center-menu {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.contact-message {
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+
+.center-message p {
+  line-height: 2em;
+}
+
+.line-it-button {
+  width: 100%;
 }
 
 /* load percentage from 0% to 100% */
@@ -50,12 +117,6 @@
     opacity: 1;
     color: white;
   }
-}
-
-.center-menu {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
 }
 
 /* for smartphone */
@@ -80,4 +141,96 @@
   .open-menu-btn {
     display: initial;
   }
+}
+
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0;
+  width: 650px;
+  table-layout: fixed;
+}
+
+table tr {
+  background-color: #fff;
+  border: 1px solid #bbb;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: 1em 10px 1em 1em;
+  border-right: 1px solid #bbb;
+}
+
+table th {
+  font-size: .85em;
+}
+
+table thead tr {
+  background-color: #eee;
+}
+
+.txt {
+  text-align: left;
+  font-size: .85em;
+}
+
+.price {
+  text-align: right;
+}
+
+table {
+  border: 0;
+  width: 100%
+}
+
+table th {
+  background-color: #eee;
+  display: block;
+  border-right: none;
+}
+
+table thead {
+  border: none;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+table tr {
+  display: block;
+  margin-bottom: .625em;
+}
+
+table td {
+  border-bottom: 1px solid #bbb;
+  display: block;
+  font-size: .8em;
+  text-align: right;
+  position: relative;
+  padding: .625em .625em .625em 4em;
+  border-right: none;
+}
+
+table td::before {
+  content: attr(data-label);
+  font-weight: bold;
+  position: absolute;
+  left: 10px;
+}
+
+table td:last-child {
+  border-bottom: 0;
 }

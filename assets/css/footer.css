@@ -1,6 +1,7 @@
 .footline {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .contact {
@@ -13,6 +14,14 @@
     overflow: hidden;
     font-size: 15px;
     margin-bottom: 20px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    align-items: center;
+    padding: 12px;
 }
 
 @media (max-width: 767px) {
