@@ -5,6 +5,8 @@ body {
 .main {
   font-family: "Noto Serif JP", serif;
   background-color: whitesmoke;
+  font-family: "Noto Serif JP", serif;
+  background-color: whitesmoke;
 }
 
 #outline {
@@ -231,9 +233,12 @@ body {
   font-size: 40px;
   font-family: "Kiwi Maru", serif;
   font-weight: 400;
+  font-family: "Kiwi Maru", serif;
+  font-weight: 400;
 }
 
 .center-message h3 {
+  font-family: serif;
   font-family: serif;
   font-size: 23px;
 }
