@@ -5,6 +5,8 @@ body {
 .main {
   font-family: "Noto Serif JP", serif;
   background-color: whitesmoke;
+  font-family: "Noto Serif JP", serif;
+  background-color: whitesmoke;
 }
 
 #outline {
@@ -17,7 +19,7 @@ body {
 #aboutus {
   /* background-image: url(../images/therapy.jpg); */
   font-family: "Noto Serif JP", serif;
-  height: 300px;
+  height: 400px;
 }
 
 #aboutus h4 {
@@ -138,14 +140,12 @@ body {
   justify-content: start;
 }
 
-.feemenu-content {
+#feemenu-content {
   /* background-image: url(../images/feemenu.jpg); */
-  padding-top: 0px;
-  margin-top: 0px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
   justify-content: start;
 }
 
@@ -160,9 +160,28 @@ body {
 #feemenu table {
   /* background-image: url(../images/feemenu.jpg); */
   display: flex;
+  padding-top: 20px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+#therapist h4 {
+  background: url(../images/sleeping_patient_icon.png) left 10px top 7px no-repeat;
+  background-size: 25px auto;
+  padding-left: 40px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#therapist img {
+  width: 200px;
+}
+
+#therapist-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-content {
@@ -170,7 +189,7 @@ body {
 }
 
 #contact h4 {
-  background: url(../images/sleeping_patient_icon.png) left 5px top 7px no-repeat;
+  background: url(../images/call_icon.png) left 10px top 7px no-repeat;
   background-size: 25px auto;
   padding-left: 40px;
   font-size: 20px;
@@ -214,9 +233,12 @@ body {
   font-size: 40px;
   font-family: "Kiwi Maru", serif;
   font-weight: 400;
+  font-family: "Kiwi Maru", serif;
+  font-weight: 400;
 }
 
 .center-message h3 {
+  font-family: serif;
   font-family: serif;
   font-size: 23px;
 }
@@ -248,6 +270,7 @@ body {
 
 .emph-message {
   font-size: 18px;
+  padding: 10px;
   font-family: "Yuji Syuku", serif;
 }
 
